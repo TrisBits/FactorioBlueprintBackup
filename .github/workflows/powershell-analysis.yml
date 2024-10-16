@@ -1,0 +1,33 @@
+name: PSScriptAnalyzer
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'src/**'
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  scan:
+    name: PSScriptAnalyzer
+    runs-on: ubuntu-latest
+    steps:
+     - name: Run PSScriptAnalyzer
+       uses: microsoft/psscriptanalyzer-action@v1.0
+       with:
+         path: .\src
+         recurse: true
+         output: results.sarif
+
+     # Upload the SARIF file generated in the previous step
+     - name: Upload SARIF results file
+       uses: github/codeql-action/upload-sarif@v1
+       with:
+         sarif_file: results.sarif
