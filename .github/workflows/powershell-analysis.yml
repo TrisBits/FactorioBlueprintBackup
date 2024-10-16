@@ -21,7 +21,7 @@ jobs:
     steps:
      - uses: actions/checkout@v4
      - name: Run PSScriptAnalyzer
-       uses: microsoft/psscriptanalyzer-action@v1.0
+       uses: microsoft/psscriptanalyzer-action@v1.1
        with:
          path: .\src
          recurse: true
