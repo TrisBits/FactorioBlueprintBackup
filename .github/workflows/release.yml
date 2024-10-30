@@ -1,0 +1,26 @@
+---
+name: Release Attach Assets
+on:
+  release:
+    types: [published]
+
+# Make sure the GITHUB_TOKEN has permission to upload to our releases
+permissions:
+  contents: write
+
+jobs:
+  package-win:
+    name: PackageWindows
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: '📦 Package zip'
+      shell: bash
+      run: |
+        cd ${{github.workspace}}
+        zip -r FactorioBlueprintBackup-win.zip src/ -j
+        gh release upload ${{github.event.release.tag_name}} FactorioBlueprintBackup-win.zip
+      env:
+        shell: bash
+        GITHUB_TOKEN: ${{ github.TOKEN }}

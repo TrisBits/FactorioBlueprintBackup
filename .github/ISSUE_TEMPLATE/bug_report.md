@@ -25,10 +25,10 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
-This can be found by running **winver** in a PowerShell window.
+This can be found by clicking on the Start menu and typing **winver**, then selecting it.
 
-- OS: [e.g. Windows 10 Home]
-- Version [e.g. 20H2]
+- OS: [e.g. Windows 11 Home]
+- Version [e.g. 23H2]
 
 **Additional context**
 Add any other context about the problem here.
