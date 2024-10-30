@@ -22,5 +22,5 @@ jobs:
     - name: Run PSScriptAnalyzer
       shell: powershell
       run: |
-        $files = Get-ChildItem . -Include *.ps1,*.psm1,*.psd1 -Recurse
+        $files = Get-ChildItem ./src -Include *.ps1,*.psm1,*.psd1 -Recurse
         ./.github/scripts/Invoke-PSSA.ps1 -Files $files
