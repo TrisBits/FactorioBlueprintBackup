@@ -19,7 +19,7 @@ jobs:
       shell: bash
       run: |
         cd ${{github.workspace}}
-        zip -r FactorioBlueprintBackup-win.zip src/ -j
+        zip -r FactorioBlueprintBackup.zip src/ -j
         gh release upload ${{github.event.release.tag_name}} FactorioBlueprintBackup-win.zip
       env:
         shell: bash

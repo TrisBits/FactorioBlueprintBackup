@@ -2,6 +2,8 @@
 
 ![PSScriptAnalyzer](https://github.com/TrisBits/FactorioBlueprintBackup/actions/workflows/powershell-analyze.yml/badge.svg?branch=main)
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K115GNK4)
+
 ## Description
 
 On game startup from Steam, a backup of **blueprint-storage.dat** is taken.  It maintians the last 10 timestamped backups, and the oldest is removed.
