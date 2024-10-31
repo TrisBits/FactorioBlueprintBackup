@@ -6,7 +6,7 @@
 
 ## Description
 
-On game startup from Steam, a backup of **blueprint-storage.dat** is taken.  It maintians the last 10 timestamped backups, and the oldest is removed.
+On game startup from Steam, a backup of all files with the naming pattern **blueprint-storage*.dat** is taken (supports both v1 and v2 Factorio).  It maintians the last 10 timestamped backups, and the oldest is removed.
 
 ## Setup on Windows
 
@@ -24,7 +24,7 @@ On game startup from Steam, a backup of **blueprint-storage.dat** is taken.  It 
     ```
 
 - Start Factorio to verify the setup is working. A new directory should now be present in the save file location **%appdata%\Factorio**, named **blueprint-backups**. <br>
-  Inside the **blueprint-backups** directory, you will find folders timestamped with Factorio startup times.  Inside each timestamped folder will be a backup copy of the **blueprint-storage.dat** file, taken at that time.
+  Inside the **blueprint-backups** directory, you will find folders timestamped with Factorio startup times.  Inside each timestamped folder will be a backup copy of the **blueprint-storage.dat** and/or **blueprint-storage-2.dat** file, taken at that time.
 
 ## FAQ
 
