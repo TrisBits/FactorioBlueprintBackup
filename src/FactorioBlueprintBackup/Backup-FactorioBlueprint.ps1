@@ -3,7 +3,7 @@ $blueprintFilePath = Join-Path -Path $factorioSavePath -ChildPath 'blueprint-sto
 $timeStamp = Get-Date -Format 'yyyy-MM-dd_HHmmss'
 $backupPath = Join-Path -Path $factorioSavePath -ChildPath 'blueprint-backups'
 
-if (!(Test-Path -Path $backupPath)){
+if (!(Test-Path -Path $backupPath)) {
     New-Item -Path $backupPath -ItemType 'directory' -Force
 }
 
