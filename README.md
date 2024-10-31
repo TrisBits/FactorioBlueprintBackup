@@ -6,7 +6,7 @@
 
 ## Description
 
-On game startup from Steam, a backup of all files with the naming pattern **blueprint-storage*.dat** is taken (supports both v1 and v2 Factorio).  It maintians the last 10 timestamped backups, and the oldest is removed.
+On game startup from Steam, a backup of all files with the naming pattern **blueprint-storage\*.dat** is taken (supports both v1 and v2 Factorio).  It maintians the last 10 timestamped backups, and the oldest is removed.
 
 ## Setup on Windows
 
@@ -31,3 +31,5 @@ On game startup from Steam, a backup of all files with the naming pattern **blue
 - On the first use, Windows may produce the following warning.  Simply select **Run Anyway**.  It should not prompt on subsequent executions.
 
   ![Windows Warning](./images/RunAnyway.png)
+
+- To upgrade the script, follow the installation procedure and accept all file overwrite prompts from Windows.
