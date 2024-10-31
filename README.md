@@ -1,5 +1,7 @@
 # FactorioBlueprintBackup
 
+![PSScriptAnalyzer](https://github.com/TrisBits/FactorioBlueprintBackup/actions/workflows/powershell-analyze.yml/badge.svg?branch=main)
+
 ## Description
 
 On game startup from Steam, a backup of **blueprint-storage.dat** is taken.  It maintians the last 10 timestamped backups, and the oldest is removed.
