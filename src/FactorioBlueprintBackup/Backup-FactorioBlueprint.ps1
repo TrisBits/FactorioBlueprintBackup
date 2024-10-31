@@ -1,5 +1,5 @@
 ﻿$factorioSavePath = Join-Path -Path $env:USERPROFILE -ChildPath '\AppData\Roaming\Factorio'
-$blueprintFilePath = Join-Path -Path $factorioSavePath -ChildPath 'blueprint-storage.dat'
+$blueprintFilePath = Join-Path -Path $factorioSavePath -ChildPath 'blueprint-storage*.dat'
 $timeStamp = Get-Date -Format 'yyyy-MM-dd_HHmmss'
 $backupPath = Join-Path -Path $factorioSavePath -ChildPath 'blueprint-backups'
 
